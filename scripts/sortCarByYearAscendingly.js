@@ -1,0 +1,22 @@
+function sortCarByYearAscendingly(cars) {
+  //error handler using try catch
+  try {
+    //declare result with spread operator to avaid side effect
+    const result = [...cars];
+
+    //sort result array by year ascendingly using bubble sort algorithm
+    for (let i = 0; i < result.length - 1; i++) {
+      for (let j = 0; j < result.length - 1; j++) {
+        if (result[j].year > result[j + 1].year) {
+          const temp = result[j];
+          result[j] = result[j + 1];
+          result[j + 1] = temp;
+        }
+      }
+    }
+    return result;
+    // return [...cars].sort((a,b) => a.year-b.year);
+  } catch (err) {
+    console.error(err)
+  }
+}
