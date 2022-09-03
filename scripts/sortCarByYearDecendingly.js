@@ -15,6 +15,8 @@ function sortCarByYearDescendingly(cars) {
       }
     }
     return result;
+
+    // one line but cheat :v
     // return [...cars].sort((a,b) => b.year-a.year)
   } catch (err) {
     console.error(err);

@@ -10,7 +10,7 @@ function filterCarByAvailability(cars) {
     //return the result
     return result;
 
-    // on line but cheat :v
+    // one line but cheat :v
     // return [...cars.filter(car => car.available)]
   } catch (err) {
     //show error message
